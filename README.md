@@ -57,16 +57,11 @@ Ensure you have Python 3.7 or later installed. You will also need the following 
 - **log_returns.csv**: CSV file with computed log returns for Nifty 50 stocks.
 - **requirements.txt**: List of dependencies required to run the application.
 
-Screenshots
-Dashboard Overview
-
-Time Series Analysis
-
 License
-This project is licensed under the MIT License. See the LICENSE file for details.
+- This project is licensed under the MIT License. See the LICENSE file for details.
 
 Contributing
-Contributions are welcome! Feel free to submit a pull request or report any issues.
+- Contributions are welcome! Feel free to submit a pull request or report any issues.
 
 Contact
-For questions or feedback, please reach out to Gagan Singhal (GSky) at [gagansinghal1729@gmail.com].
+- For questions or feedback, please reach out to Gagan Singhal (GSky) at [gagansinghal1729@gmail.com].
