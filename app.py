@@ -186,12 +186,10 @@ st.download_button("Download Elbow Method Plot as PNG", data=download_figure(fig
 
 # KMeans clustering
 st.subheader("KMeans Clustering")
+max_k = min(10, len(selected_stocks) - 1)
 
-# Ensure max number of clusters is less than or equal to the number of selected stocks
-max_k = min(10, len(selected_stocks) - 1)  # Adjust maximum `k` to be the number of stocks - 1
-
-if len(selected_stocks) > 1:  # Ensure there are enough stocks to perform clustering
-    if max_k > 1:  # Ensure there is a range for clustering
+if len(selected_stocks) > 1:
+    if max_k > 1:
         optimal_k = st.slider("Select number of clusters (k):", 2, max_k, min(4, max_k))
         kmeans = KMeans(n_clusters=optimal_k, random_state=42)
         clusters = kmeans.fit_predict(dist_matrix)
