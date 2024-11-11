@@ -206,3 +206,32 @@ else:
 st.subheader("Download Data")
 csv_data = convert_df_to_csv(all_stocks)
 st.download_button(label="Download Stock Data as CSV", data=csv_data, file_name='stock_data.csv', mime='text/csv')
+
+# Footer
+st.markdown(
+    """
+    <style>
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 15px 0;
+            background-color: #282828;
+            text-align: center;
+            font-size: 16px;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .footer strong {
+            font-weight: bold;
+            color: #e74c3c;;  /* Red color for "GSky" */
+        }
+    </style>
+    <div class="footer">
+        Developed by <strong>GSky</strong>
+    </div>
+    """, unsafe_allow_html=True)
+
+
